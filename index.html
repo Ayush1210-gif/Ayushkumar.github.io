@@ -25,13 +25,27 @@
     margin: 0 auto;
     padding: 60px 24px;
   }
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+  }
   header h1 {
     font-size: 28px;
     margin: 0 0 4px;
   }
   header p.role {
     color: var(--muted);
-    margin: 0 0 20px;
+    margin: 0;
     font-size: 16px;
   }
   .links a {
@@ -91,8 +105,13 @@
 <div class="wrap">
 
   <header>
-    <h1>Ayush Patel</h1>
-    <p class="role">IT Support Professional · CompTIA Security+</p>
+    <div class="header-top">
+      <img src="assets/profile.jpg" alt="Ayush Patel" class="avatar">
+      <div>
+        <h1>Ayush Patel</h1>
+        <p class="role">IT Support Professional · CompTIA Security+</p>
+      </div>
+    </div>
     <div class="links">
       <a href="mailto:ayush23404@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/ayushh-patell/" target="_blank">LinkedIn</a>
@@ -129,10 +148,13 @@
       <div class="title">Diploma, Computer Engineering</div>
     </div>
     <div class="item">
-      <div class="title">CompTIA Security+</div>
+      <div class="title"><a href="assets/certificate-comptia-security-plus.pdf" target="_blank" style="color:var(--text); text-decoration:underline;">CompTIA Security+</a></div>
     </div>
     <div class="item">
-      <div class="title">Atlassian ITSM Professional Certificate</div>
+      <div class="title"><a href="assets/certificate-atlassian-itsm.pdf" target="_blank" style="color:var(--text); text-decoration:underline;">Atlassian ITSM Professional Certificate</a></div>
+    </div>
+    <div class="item">
+      <div class="title"><a href="assets/certificate-thm-cybersecurity101.pdf" target="_blank" style="color:var(--text); text-decoration:underline;">TryHackMe: Cyber Security 101</a></div>
     </div>
   </section>
 
@@ -147,6 +169,18 @@
         <span>VLANs</span>
         <span>NAT</span>
         <span>ACLs</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="title">TryHackMe: Cyber Security 101</div>
+      <p>Completed all 14 modules of TryHackMe's Cyber Security 101 learning path through hands-on virtual labs and practical exercises, covering networking fundamentals, Linux and Windows/Active Directory basics, cryptography, offensive security tooling (Metasploit, Hydra, Nmap, Burp Suite, SQLMap), and defensive security (SOC fundamentals, SIEM, incident response, digital forensics, log analysis).</p>
+      <div class="tags">
+        <span>Linux</span>
+        <span>Windows/AD</span>
+        <span>Networking</span>
+        <span>SIEM</span>
+        <span>Incident Response</span>
+        <span>Offensive Security Tools</span>
       </div>
     </div>
     <div class="item">
@@ -168,6 +202,19 @@
         <span>Log Analysis</span>
         <span>Threat Detection</span>
         <span>Incident Response</span>
+      </div>
+    </div>
+    <div class="item">
+      <div class="title">SSH Brute-Force Detection & Response</div>
+      <p>Developed a cybersecurity project focused on detecting and responding to SSH brute-force attacks, simulated across 3 virtual machines. The project analyzes authentication logs to identify repeated failed login attempts, suspicious IP addresses, and potential unauthorized access attempts, using automated detection logic to improve threat identification and support faster incident response.</p>
+      <div class="tags">
+        <span>Linux</span>
+        <span>SSH</span>
+        <span>Python</span>
+        <span>Log Analysis</span>
+        <span>Threat Detection</span>
+        <span>Incident Response</span>
+        <span>Automation</span>
       </div>
     </div>
   </section>
